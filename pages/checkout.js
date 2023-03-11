@@ -18,12 +18,11 @@ export default function Checkout({ headerFooter, countries }) {
 export async function getStaticProps() {
 	
 	const { data: headerFooterData } = await axios.get( HEADER_FOOTER_ENDPOINT );
-	const { data: countries } = await axios.get( WOOCOMMERCE_COUNTRIES_ENDPOINT );
-
+	
 	return {
 		props: {
 			headerFooter: headerFooterData?.data ?? {},
-			countries: countries || {}
+			
 		},
 		
 		/**

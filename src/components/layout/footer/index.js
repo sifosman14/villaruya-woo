@@ -22,7 +22,7 @@ const Footer = ({footer}) => {
 	}, []);
 	
 	return (
-		<footer className="footer bg-blue-500 p-6">
+		<footer className="footer bg-black p-6">
 			<div className="container mx-auto">
 				<div className="flex flex-wrap -mx-1 overflow-hidden text-white">
 					
@@ -33,14 +33,15 @@ const Footer = ({footer}) => {
 								<div dangerouslySetInnerHTML={{ __html: sanitize( sidebarOne ) }}/>
 							</div>
 							{/*Widget Two*/}
-							<div className="my-1 px-1 w-full overflow-hidden sm:w-full lg:w-1/2 xl:w-1/3">
+							<div className="my-2 pl-12 px-1 w-full overflow-hidden sm:w-full lg:w-1/2 xl:w-1/3">
 								<div dangerouslySetInnerHTML={{ __html: sanitize( sidebarTwo ) }}/>
 							</div>
 						</>
 					) : null}
 					
 					{/*	Footer Menus*/}
-					<div className="my-1 px-1 w-full overflow-hidden sm:w-full lg:w-1/2 xl:w-1/3">
+					<div className="text-right my-1 px-1 w-full overflow-hidden sm:w-full lg:w-1/2 xl:w-1/3">
+						<h6>Useful Links</h6>
 						{ !isEmpty( footerMenuItems ) && isArray( footerMenuItems ) ? (
 							<ul>
 								{ footerMenuItems.map( menuItem => (
@@ -57,7 +58,7 @@ const Footer = ({footer}) => {
 				<div className="mb-8 mt-8 w-full flex flex-wrap">
 					{/*Copyright Text*/}
 					<div className="w-full md:w-1/2 lg:w-1/4 text-white">
-						{ copyrightText ? copyrightText : '© Codeytek Academy 2021' }
+						{ copyrightText ? copyrightText : '© OWD 2022' }
 					</div>
 					<div className="w-full lg:w-3/4 flex justify-end">
 						{ !isEmpty( socialLinks ) && isArray( socialLinks ) ? (

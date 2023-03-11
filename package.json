@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "svg": "svgr -d src/components/icons src/components/icons/svgs"
@@ -33,7 +33,7 @@
     "postcss": "^8.4.16",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^14.1.0",
-    "postcss-preset-env": "^6.7.1",
+    "postcss-preset-env": "^7.8.3",
     "precss": "^4.0.0",
     "tailwindcss": "^2.2.19"
   }

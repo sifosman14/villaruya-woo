@@ -23,15 +23,15 @@ const Header = ( { header } ) => {
 									{
 										siteLogoUrl ? (
 											<img className="mr-2" src={ siteLogoUrl } alt={ `${ siteTitle } logo` }
-											     width="86"
-											     height="86"/>
+											     width="156"
+											     height="156"/>
 										) : <TailwindIcon/>
 									}
 								</a>
 							</Link>
 							<span>
 								<Link href="/">
-									<a className="font-semibold text-xl tracking-tight">{ siteTitle || 'WooNext' }</a>
+									<a className="font-semibold text-xl tracking-tight">{ siteTitle }</a>
 								</Link>
 								{ siteDescription ? <p className="mb-0">{ siteDescription }</p> : null }
 							</span>

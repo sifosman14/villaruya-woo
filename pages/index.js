@@ -10,6 +10,7 @@ import { HEADER_FOOTER_ENDPOINT } from '../src/utils/constants/endpoints';
 import axios from 'axios';
 import { getProductsData } from '../src/utils/products';
 import Layout from '../src/components/layout';
+import HeroSection from '../src/components/hero';
 
 export default function Home({ headerFooter, products }) {
 	const seo = {
@@ -24,6 +25,7 @@ export default function Home({ headerFooter, products }) {
 	}
 	return (
 		<Layout headerFooter={ headerFooter || {} } seo={ seo }>
+			<HeroSection/>
 			<Products products={products}/>
 		</Layout>
 	)
